@@ -25,20 +25,20 @@
 ```
 
 ## Changing Python versions for the current project 
-	- You can switch Python versions for your current UV project at any point as long as the new version satisfies the specifications in your pyproject.toml file.
-	- The python version is changed in the .python-version file
-	- If the requested version isn't found, UV downloads and installs it inside the /Users/username/.local/share/uv/python path.
-	- UV also creates a new virtual environment inside the project directory, replacing the old one. 
-	This new environment doesn't have the dependencies listed in your pyproject.toml file, so you have to install them with the following command
+- You can switch Python versions for your current UV project at any point as long as the new version satisfies the specifications in your pyproject.toml file.
+- The python version is changed in the .python-version file
+- If the requested version isn't found, UV downloads and installs it inside the /Users/username/.local/share/uv/python path.
+- UV also creates a new virtual environment inside the project directory, replacing the old one. 
+This new environment doesn't have the dependencies listed in your pyproject.toml file, so you have to install them with the following command
 
-	```sh
-	uv pip install -e .
-	```
+```sh
+uv pip install -e .
+```
 
 ## Avoid permission denied warnings
-	- Use sudo
-	- Even better solution would be to change the ownership of the UV home directory to the user:
+- Use sudo
+- Even better solution would be to change the ownership of the UV home directory to the user:
 
-	```sh
-	sudo chown -R $USER ~/.local/share/uv
-	```
+```sh
+sudo chown -R $USER ~/.local/share/uv
+```
