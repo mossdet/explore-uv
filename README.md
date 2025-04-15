@@ -1,3 +1,5 @@
+[Datacamp Tutorial](https://www.datacamp.com/tutorial/python-uv)
+
 # Initialize Projects
 ## Initialize project with name project-name
 ```sh
