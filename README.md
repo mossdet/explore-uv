@@ -1,3 +1,4 @@
+# Initialize Projects
 ## Initialize project with name project-name
 ```sh
 	uv init project-name
