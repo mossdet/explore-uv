@@ -18,6 +18,24 @@
 	uv run hello.py
 ```
 
+
+# Creating a virtual environment
+uv supports creating virtual environments, e.g., to create a virtual environment at .venv:
+```sh
+uv venv
+```
+
+A specific name or path can be specified, e.g., to create a virtual environment at my-name:
+```sh
+uv venv my-name
+```
+
+A Python version can be requested, e.g., to create a virtual environment with Python 3.11:
+```sh
+uv venv --python 3.11
+```
+Note this requires the requested Python version to be available on the system. However, if unavailable, uv will download Python for you.
+
 ## Activate and deactivate environment
 ```sh
 source .venv/bin/activate
