@@ -47,6 +47,11 @@ source .venv/bin/activate
 deactivate
 ```
 
+## Generate requirements.txt
+```sh
+uv pip freeze > requirements.txt
+```
+
 # Managing Python Versions in UV
 ## List existing python versions
 ```sh
